@@ -1,0 +1,118 @@
+<!-- SIDE NAVBAR -->
+
+<!-- <mat-sidenav-container>
+  <mat-sidenav mode="push" [(opened)]="opened" >Side NavBar</mat-sidenav>
+  <mat-sidenav-content>Main
+    <mat-button-toggle (click)="opened = !opened">sidebar open</mat-button-toggle>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<!-- MENU -->
+
+<!-- <mat-menu #appMenu="matMenu">
+  <button mat-menu-item [mat-menu-trigger-for]="subMenu">Item One</button>
+  <button mat-menu-item>Item Two</button>
+</mat-menu>
+
+<button mat-flat-button [mat-menu-trigger-for]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Item of Item One</button>
+  <button mat-menu-item>Item of Item Two</button>
+  <button mat-menu-item>Item of Item Three</button>
+</mat-menu>
+
+<mat-menu #lazymenu="matMenu">
+  <ng-template matMenuContent let-name="name">
+    <button mat-menu-item>setting</button>
+    <button mat-menu-item>logout{{name  }}</button>
+  </ng-template>
+</mat-menu>
+
+<button mat-raised-button [matMenuTriggerData]="{name:'Oam'}" [mat-menu-trigger-for]="lazymenu">
+  Oam
+</button>
+<button mat-raised-button [matMenuTriggerData]="{name:'you'}" [mat-menu-trigger-for]="lazymenu">
+  you
+</button> -->
+<div class="container">
+  <mat-toolbar
+    style="position: absolute; background-color: black; height: 75px"
+  >
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon style="color: white">menu</mat-icon>
+    </button>
+
+    <a href="#" style="margin-top: 10px">
+      <img
+        src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png"
+        height="40px"
+    /></a>
+
+    <span class="example-spacer"></span>
+
+    <ul class="header_ul">
+      <li class="link-1">
+        <a href="#">
+          <span>Become a Host</span>
+        </a>
+      </li>
+      <li class="link-2">
+        <a href="#">Login/Signup</a>
+      </li>
+    </ul>
+  </mat-toolbar>
+
+  <div style="padding-top: 7%">
+    <div
+      style="
+        padding: 20px;
+        margin-left: 17%;
+        margin-right: 17%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+      "
+    >
+      <h1
+        style="
+          color: white;
+          font-size: 35px;
+          line-height: 1.29;
+          letter-spacing: 2px;
+          font-weight: 600;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        The perfect car for your next trip is just around the corner
+      </h1>
+      <h3 style="color: white; font-size: 25px">Book your drive now!</h3>
+    </div>
+    <div style="display: flex; justify-content: center; padding-top: 6%">
+      <mat-button-toggle-group
+        name="favoriteColor"
+        aria-label="Favorite Color"
+        style="width: 25%; height: 40px"
+      >
+        <mat-button-toggle
+          value="red"
+          style="width: 50%; border-color: green"
+          disableRipple
+          >Red</mat-button-toggle
+        >
+        <mat-button-toggle
+          value="green"
+          style="width: 50%; border-color: green"
+          disableRipple
+          >Green</mat-button-toggle
+        >
+        <div class="field_wrap">
+          <a> </a>
+        </div>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+</div>

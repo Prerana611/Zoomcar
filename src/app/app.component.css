@@ -1,0 +1,47 @@
+.example-spacer {
+   flex: 1 1 auto;
+}
+
+.header_ul {
+   margin: 0%;
+   display: flex;
+   gap: 40px;
+   justify-content: space-between;
+   list-style: none;
+   font-weight: bold;
+   font-size: 18px;
+   padding-inline-start: 0px;
+}
+
+.header_ul li {
+   display: flex;
+   align-items: center;
+}
+
+.link-1 a {
+   background-color: white;
+   font-weight: lighter;
+   padding: 6px 12px;
+   border-radius: 50px;
+   background-image: url(https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg);
+   background-repeat: no-repeat;
+   background-position: 10% 50%;
+   padding-left: 46.4px;
+   flex-shrink: 0;
+   color: black;
+   text-decoration: none;
+}
+
+.link-2 a {
+   color: white;
+   text-decoration: none;
+   margin-right: 20px;
+}
+
+.container {
+   background-image: url(https://www.zoomcar.com/img/hero-banner-web.png);
+   height: 98%;
+   background-position: center center;
+   background-size: cover;
+   box-shadow: rgb(0 0 0 / 30%) 0px 0px 0px 500px inset;
+}
